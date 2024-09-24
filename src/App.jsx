@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
-import { ToDoList } from "./ex1.jsx"
+import { ToDoList } from "./ex1.jsx";
+import { CountApp } from "./ex3.jsx";
 
 function useFetchedUsers() {
   const [users, setUsers] = useState([]);
@@ -44,9 +45,7 @@ const UsersList = () => {
 };
 
 const App = () => {
-  return (
-      <ToDoList></ToDoList>
-  )
+  return <CountApp></CountApp>;
 };
 
-export default App
+export default App;

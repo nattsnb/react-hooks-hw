@@ -8,7 +8,7 @@ export const ToDoList = () => {
       .then((response) => response.json())
       .then((data) => {
         setTasks(data);
-        console.log(data)
+        console.log(data);
       })
       .finally(() => {
         setIsLoading(false);
@@ -29,5 +29,3 @@ export const ToDoList = () => {
     </div>
   );
 };
-
-
