@@ -16,9 +16,9 @@ function Count() {
     };
   }, []);
 
-    useEffect(() => {
-        document.title = `Count ${count}`;
-    }, [count]);
+  useEffect(() => {
+    document.title = `Count ${count}`;
+  }, [count]);
 
   return (
     <div>
