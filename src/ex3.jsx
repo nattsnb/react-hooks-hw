@@ -16,10 +16,13 @@ function Count() {
     };
   }, []);
 
+    useEffect(() => {
+        document.title = `Count ${count}`;
+    }, [count]);
+
   return (
     <div>
       <p>Count: {count}</p>
-        {document.title = `Count ${count}`}
     </div>
   );
 }
