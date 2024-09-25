@@ -1,8 +1,4 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
-import { ToDoList } from "./ex1.jsx";
-import { CountApp } from "./ex3.jsx";
-import {CompletedTasksList} from "./ex4.jsx";
-import {FriendsEX} from "./fromLesson.jsx";
 
 function useFetchedUsers() {
   const [users, setUsers] = useState([]);
@@ -47,7 +43,7 @@ const UsersList = () => {
 };
 
 const App = () => {
-  return <CompletedTasksList ></CompletedTasksList >;
+  return <UsersList ></UsersList >;
 };
 
 export default App;
